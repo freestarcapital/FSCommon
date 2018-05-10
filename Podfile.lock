@@ -1,0 +1,37 @@
+PODS:
+  - FSLogging (0.0.1)
+  - FSNetworking (3.2.0)
+  - FSSerialization (0.0.1)
+
+DEPENDENCIES:
+  - FSLogging (from `https://github.com/freestarcapital/FSLogging.git`)
+  - FSNetworking (from `https://github.com/freestarcapital/FSNetworking.git`)
+  - FSSerialization (from `https://github.com/freestarcapital/FSSerialization.git`)
+
+EXTERNAL SOURCES:
+  FSLogging:
+    :git: https://github.com/freestarcapital/FSLogging.git
+  FSNetworking:
+    :git: https://github.com/freestarcapital/FSNetworking.git
+  FSSerialization:
+    :git: https://github.com/freestarcapital/FSSerialization.git
+
+CHECKOUT OPTIONS:
+  FSLogging:
+    :commit: 6226572c59611397056e3694751ae3116a78e555
+    :git: https://github.com/freestarcapital/FSLogging.git
+  FSNetworking:
+    :commit: d85da805ab21616c173af1767a650d658b6f5b4d
+    :git: https://github.com/freestarcapital/FSNetworking.git
+  FSSerialization:
+    :commit: b786e5382b0cdc69d36cae007fc3b36419b08b1d
+    :git: https://github.com/freestarcapital/FSSerialization.git
+
+SPEC CHECKSUMS:
+  FSLogging: 1f0858f11d94c6748c21fd7268d9dca45a630be1
+  FSNetworking: 5386733454fec49ebe9bb57394cd5072dc41686d
+  FSSerialization: d3ca4121f7095ac29a8a92fb7bdd440eedd96d8a
+
+PODFILE CHECKSUM: 3f8f50236293403f3a2f3aea23df27a9b0107128
+
+COCOAPODS: 1.5.0
