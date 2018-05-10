@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		05666EB120A4B0C100CA3ADB /* Universal-FSCommon */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 05666EB420A4B0C100CA3ADB /* Build configuration list for PBXAggregateTarget "Universal-FSCommon" */;
+			buildPhases = (
+				05666EB520A4B0C900CA3ADB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Universal-FSCommon";
+			productName = "Universal-FSCommon";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		054FAAC2209F8B26003BC6C4 /* FSCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 054FAAC0209F8B26003BC6C4 /* FSCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		054FAACF209F903E003BC6C4 /* FSCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054FAACE209F903E003BC6C4 /* FSCommonTests.swift */; };
@@ -400,6 +414,9 @@
 					054FAACB209F903E003BC6C4 = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					05666EB120A4B0C100CA3ADB = {
+						CreatedOnToolsVersion = 9.3;
+					};
 				};
 			};
 			buildConfigurationList = 054FAAB7209F8B26003BC6C4 /* Build configuration list for PBXProject "FSCommon" */;
@@ -416,6 +433,7 @@
 			targets = (
 				054FAABC209F8B26003BC6C4 /* FSCommon */,
 				054FAACB209F903E003BC6C4 /* FSCommonTests */,
+				05666EB120A4B0C100CA3ADB /* Universal-FSCommon */,
 			);
 		};
 /* End PBXProject section */
@@ -438,6 +456,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05666EB520A4B0C900CA3ADB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/build\"\n";
+		};
 		0C67A68B556AA9112439E38F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -760,6 +791,22 @@
 			};
 			name = Release;
 		};
+		05666EB220A4B0C100CA3ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05666EB320A4B0C100CA3ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -786,6 +833,15 @@
 			buildConfigurations = (
 				054FAAD4209F903E003BC6C4 /* Debug */,
 				054FAAD5209F903E003BC6C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05666EB420A4B0C100CA3ADB /* Build configuration list for PBXAggregateTarget "Universal-FSCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05666EB220A4B0C100CA3ADB /* Debug */,
+				05666EB320A4B0C100CA3ADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

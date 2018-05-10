@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.author   = { "Freestar Mobile Engineering" => "sdk@freestar.io" }
   s.source       = { :git => "https://github.com/freestarcapital/FSCommon.git", :tag => s.version.to_s }
   s.requires_arc = true
-  s.source_files = "Source/*.{h,m}"
   s.ios.deployment_target  = "8.0"
+  s.ios.vendored_frameworks = "build/FSCommon.framework"
 end
