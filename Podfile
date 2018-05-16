@@ -6,8 +6,9 @@ target "FSCommon" do
   pod 'FSNetworking', :git => 'https://github.com/freestarcapital/FSNetworking.git'
   pod 'FSLogging', :git => 'https://github.com/freestarcapital/FSLogging.git'
   pod 'FSSerialization', :git => 'https://github.com/freestarcapital/FSSerialization.git'
+  pod 'FSWeakGCDTimer', :git => 'https://github.com/freestarcapital/FSWeakGCDTimer.git'
 
   target 'FSCommonTests' do
-    inherit! :search_paths    
+    inherit! :search_paths
   end
 end
