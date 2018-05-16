@@ -27,5 +27,6 @@ FOUNDATION_EXPORT const unsigned char FSCommonVersionString[];
 #import <FSCommon/FSURLResponseSerialization.h>
 #import <FSCommon/FSURLSessionManager.h>
 #import <FSCommon/FSLogging.h>
+#import <FSCommon/FSWeakGCDTimer.h>
 
 
