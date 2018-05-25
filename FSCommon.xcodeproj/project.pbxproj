@@ -482,7 +482,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/build\"\n";
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\necho ${BUILD_DIR}\necho ${BUILD_ROOT}\necho ${UNIVERSAL_OUTPUTFOLDER}\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/build\"\n";
 		};
 		0C67A68B556AA9112439E38F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -736,7 +736,7 @@
 					"@loader_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.mobile.FSCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -772,7 +772,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.mobile.FSCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -832,6 +832,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
@@ -843,6 +844,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-fembed-bitcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
