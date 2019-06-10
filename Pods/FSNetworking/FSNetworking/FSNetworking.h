@@ -27,6 +27,7 @@ FOUNDATION_EXPORT const unsigned char FSNetworkingVersionString[];
 #import <FSNetworking/FSNetworkReachabilityManager.h>
 #import <FSNetworking/FSURLSessionManager.h>
 #import <FSNetworking/FSHTTPSessionManager.h>
+#import <FSNetworking/FSHTTPSessionManager+RetryPolicy.h>
 
 #endif /* _FSNETWORKING_ */
 

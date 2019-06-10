@@ -3,12 +3,23 @@ PODS:
   - FSNetworking (3.2.0)
   - FSSerialization (0.0.1)
   - FSWeakGCDTimer (0.0.1)
+  - ObjcAssociatedObjectHelpers (2.0.1):
+    - ObjcAssociatedObjectHelpers/Core (= 2.0.1)
+    - "ObjcAssociatedObjectHelpers/NSObject+Dictionary (= 2.0.1)"
+  - ObjcAssociatedObjectHelpers/Core (2.0.1)
+  - "ObjcAssociatedObjectHelpers/NSObject+Dictionary (2.0.1)":
+    - ObjcAssociatedObjectHelpers/Core
 
 DEPENDENCIES:
   - FSLogging (from `https://github.com/freestarcapital/FSLogging.git`)
   - FSNetworking (from `https://github.com/freestarcapital/FSNetworking.git`)
   - FSSerialization (from `https://github.com/freestarcapital/FSSerialization.git`)
   - FSWeakGCDTimer (from `https://github.com/freestarcapital/FSWeakGCDTimer.git`)
+  - ObjcAssociatedObjectHelpers (= 2.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ObjcAssociatedObjectHelpers
 
 EXTERNAL SOURCES:
   FSLogging:
@@ -25,7 +36,7 @@ CHECKOUT OPTIONS:
     :commit: 193c8e459d9f5ae3853653614ef6b940afe1b776
     :git: https://github.com/freestarcapital/FSLogging.git
   FSNetworking:
-    :commit: d85da805ab21616c173af1767a650d658b6f5b4d
+    :commit: 02d74d40d35d7e019ebcc3d150343558f9df1be7
     :git: https://github.com/freestarcapital/FSNetworking.git
   FSSerialization:
     :commit: 26c8e168fc16179040a1b49f3eb31bfd1f9fb74a
@@ -39,7 +50,8 @@ SPEC CHECKSUMS:
   FSNetworking: 5386733454fec49ebe9bb57394cd5072dc41686d
   FSSerialization: d3ca4121f7095ac29a8a92fb7bdd440eedd96d8a
   FSWeakGCDTimer: ad6753f083c1a03264fcc6a4c320258eaed10cf6
+  ObjcAssociatedObjectHelpers: 686c291f292c26a49b9b1fa7d58130a8d35d59d2
 
-PODFILE CHECKSUM: 0eb294a59a2b9eebce4df66dd8b3e145a17abd35
+PODFILE CHECKSUM: 3caba022586106db1edac26d37c20f142f6c2b12
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.rc.2

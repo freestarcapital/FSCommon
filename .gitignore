@@ -63,3 +63,4 @@ iOSInjectionProject/
 FSCommon.xcodeproj/project.xcworkspace
 FSCommon.xcworkspace
 build/FSCommon.build
+build/XCBuildData
