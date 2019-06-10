@@ -73,7 +73,7 @@
 		05666EB020A4A72800CA3ADB /* FSLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 05666EAE20A4A72800CA3ADB /* FSLogging.m */; };
 		058639E120AC9A6F0044CEEC /* FSWeakGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 058639DF20AC9A6F0044CEEC /* FSWeakGCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		058639E220AC9A6F0044CEEC /* FSWeakGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 058639E020AC9A6F0044CEEC /* FSWeakGCDTimer.m */; };
-		05F32AE122AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F32ADF22AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h */; };
+		05F32AE122AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F32ADF22AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05F32AE222AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F32AE022AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m */; };
 		05F32AFE22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F32AFA22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.h */; };
 		05F32AFF22AEE70E0043B765 /* NSObject+AssociatedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F32AFB22AEE70E0043B765 /* NSObject+AssociatedDictionary.m */; };
