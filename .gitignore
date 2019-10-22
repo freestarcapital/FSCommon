@@ -64,3 +64,6 @@ FSCommon.xcodeproj/project.xcworkspace
 FSCommon.xcworkspace
 build/FSCommon.build
 build/XCBuildData
+Pods/Local Podspecs
+Pods/Pods.xcodeproj
+Pods/Target Support Files

@@ -75,11 +75,11 @@
 		058639E220AC9A6F0044CEEC /* FSWeakGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 058639E020AC9A6F0044CEEC /* FSWeakGCDTimer.m */; };
 		05F32AE122AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F32ADF22AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05F32AE222AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F32AE022AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m */; };
-		05F32AFE22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F32AFA22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.h */; };
-		05F32AFF22AEE70E0043B765 /* NSObject+AssociatedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F32AFB22AEE70E0043B765 /* NSObject+AssociatedDictionary.m */; };
-		05F32B0022AEE70E0043B765 /* ObjcAssociatedObjectHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F32AFC22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.m */; };
-		05F32B0122AEE70E0043B765 /* NSObject+AssociatedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F32AFD22AEE70E0043B765 /* NSObject+AssociatedDictionary.h */; };
-		5AD9DD85B50591417C16E967 /* Pods_FSCommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858A7A6B0AAFED7DFDE1802B /* Pods_FSCommonTests.framework */; };
+		7F6FFDFDB3A0B89A8BFAB093 /* Pods_FSCommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE10156A47ECE60E4F52314C /* Pods_FSCommonTests.framework */; };
+		FD9DB745235FCB0700A26115 /* ObjcAssociatedObjectHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9DB741235FCB0700A26115 /* ObjcAssociatedObjectHelpers.h */; };
+		FD9DB746235FCB0700A26115 /* NSObject+AssociatedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9DB742235FCB0700A26115 /* NSObject+AssociatedDictionary.m */; };
+		FD9DB747235FCB0700A26115 /* ObjcAssociatedObjectHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9DB743235FCB0700A26115 /* ObjcAssociatedObjectHelpers.m */; };
+		FD9DB748235FCB0700A26115 /* NSObject+AssociatedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9DB744235FCB0700A26115 /* NSObject+AssociatedDictionary.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		048C0A6A13611C332E6FC688 /* Pods-FSCommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSCommonTests/Pods-FSCommonTests.release.xcconfig"; sourceTree = "<group>"; };
+		0530F3BC4A68DD75E898D5EF /* Pods-FSCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommon.debug.xcconfig"; path = "Target Support Files/Pods-FSCommon/Pods-FSCommon.debug.xcconfig"; sourceTree = "<group>"; };
 		054FAABD209F8B26003BC6C4 /* FSCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		054FAAC0209F8B26003BC6C4 /* FSCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCommon.h; sourceTree = "<group>"; };
 		054FAAC1209F8B26003BC6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,16 +153,14 @@
 		05F32AE022AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FSHTTPSessionManager+RetryPolicy.m"; path = "Pods/FSNetworking/FSNetworking/Source/FSHTTPSessionManager+RetryPolicy.m"; sourceTree = SOURCE_ROOT; };
 		05F32AE322AEE5920043B765 /* ObjcAssociatedObjectHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjcAssociatedObjectHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F32AE522AEE5A30043B765 /* ObjcAssociatedObjectHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjcAssociatedObjectHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		05F32AE722AEE6790043B765 /* Pods_FSCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_FSCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		05F32AFA22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcAssociatedObjectHelpers.h; sourceTree = "<group>"; };
-		05F32AFB22AEE70E0043B765 /* NSObject+AssociatedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedDictionary.m"; sourceTree = "<group>"; };
-		05F32AFC22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcAssociatedObjectHelpers.m; sourceTree = "<group>"; };
-		05F32AFD22AEE70E0043B765 /* NSObject+AssociatedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedDictionary.h"; sourceTree = "<group>"; };
-		140108B2E6D565F4C7A9E97D /* Pods-FSCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSCommon/Pods-FSCommon.debug.xcconfig"; sourceTree = "<group>"; };
-		1D13494F7DF40DF1D9395600 /* Pods-FSCommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSCommonTests/Pods-FSCommonTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5899CD8F9E9A9CD382EF603C /* Pods_FSCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6951494C0DD4D06E7F85B0BA /* Pods-FSCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSCommon/Pods-FSCommon.release.xcconfig"; sourceTree = "<group>"; };
-		858A7A6B0AAFED7DFDE1802B /* Pods_FSCommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A293DF0A862F5566061156F9 /* Pods-FSCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommon.release.xcconfig"; path = "Target Support Files/Pods-FSCommon/Pods-FSCommon.release.xcconfig"; sourceTree = "<group>"; };
+		BE10156A47ECE60E4F52314C /* Pods_FSCommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSCommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3BCD17F248931728F0D0717 /* Pods-FSCommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommonTests.debug.xcconfig"; path = "Target Support Files/Pods-FSCommonTests/Pods-FSCommonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1ED38DE74EFD39CB14E09C /* Pods-FSCommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSCommonTests.release.xcconfig"; path = "Target Support Files/Pods-FSCommonTests/Pods-FSCommonTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD9DB741235FCB0700A26115 /* ObjcAssociatedObjectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcAssociatedObjectHelpers.h; sourceTree = "<group>"; };
+		FD9DB742235FCB0700A26115 /* NSObject+AssociatedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedDictionary.m"; sourceTree = "<group>"; };
+		FD9DB743235FCB0700A26115 /* ObjcAssociatedObjectHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcAssociatedObjectHelpers.m; sourceTree = "<group>"; };
+		FD9DB744235FCB0700A26115 /* NSObject+AssociatedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedDictionary.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054FAAD1209F903E003BC6C4 /* FSCommon.framework in Frameworks */,
-				5AD9DD85B50591417C16E967 /* Pods_FSCommonTests.framework in Frameworks */,
+				7F6FFDFDB3A0B89A8BFAB093 /* Pods_FSCommonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,8 +189,8 @@
 				054FAABF209F8B26003BC6C4 /* FSCommon */,
 				054FAACD209F903E003BC6C4 /* FSCommonTests */,
 				054FAABE209F8B26003BC6C4 /* Products */,
-				2C8489A14D0C1D7BCD9D97BC /* Pods */,
 				64C6ED50582F899DBA0072D9 /* Frameworks */,
+				3AB153C7636301E3480D2FC8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,7 +233,7 @@
 		054FAAD9209FE8BA003BC6C4 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				05F32AF922AEE70E0043B765 /* ObjcAssociatedObjectHelpers */,
+				FD9DB740235FCB0700A26115 /* ObjcAssociatedObjectHelpers */,
 				058639DE20AC98D70044CEEC /* FSWeakGCDTimer */,
 				054FAAE8209FE991003BC6C4 /* Serialization */,
 				054FAAE7209FE98A003BC6C4 /* Networking */,
@@ -332,40 +330,38 @@
 			path = FSWeakGCDTimer;
 			sourceTree = "<group>";
 		};
-		05F32AF922AEE70E0043B765 /* ObjcAssociatedObjectHelpers */ = {
+		3AB153C7636301E3480D2FC8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05F32AFA22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.h */,
-				05F32AFB22AEE70E0043B765 /* NSObject+AssociatedDictionary.m */,
-				05F32AFC22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.m */,
-				05F32AFD22AEE70E0043B765 /* NSObject+AssociatedDictionary.h */,
+				0530F3BC4A68DD75E898D5EF /* Pods-FSCommon.debug.xcconfig */,
+				A293DF0A862F5566061156F9 /* Pods-FSCommon.release.xcconfig */,
+				C3BCD17F248931728F0D0717 /* Pods-FSCommonTests.debug.xcconfig */,
+				DB1ED38DE74EFD39CB14E09C /* Pods-FSCommonTests.release.xcconfig */,
 			);
-			name = ObjcAssociatedObjectHelpers;
-			path = Pods/ObjcAssociatedObjectHelpers/ObjcAssociatedObjectHelpers;
-			sourceTree = SOURCE_ROOT;
-		};
-		2C8489A14D0C1D7BCD9D97BC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				140108B2E6D565F4C7A9E97D /* Pods-FSCommon.debug.xcconfig */,
-				6951494C0DD4D06E7F85B0BA /* Pods-FSCommon.release.xcconfig */,
-				1D13494F7DF40DF1D9395600 /* Pods-FSCommonTests.debug.xcconfig */,
-				048C0A6A13611C332E6FC688 /* Pods-FSCommonTests.release.xcconfig */,
-			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		64C6ED50582F899DBA0072D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				05F32AE722AEE6790043B765 /* Pods_FSCommon.framework */,
 				05F32AE522AEE5A30043B765 /* ObjcAssociatedObjectHelpers.framework */,
 				05F32AE322AEE5920043B765 /* ObjcAssociatedObjectHelpers.framework */,
-				5899CD8F9E9A9CD382EF603C /* Pods_FSCommon.framework */,
-				858A7A6B0AAFED7DFDE1802B /* Pods_FSCommonTests.framework */,
+				BE10156A47ECE60E4F52314C /* Pods_FSCommonTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		FD9DB740235FCB0700A26115 /* ObjcAssociatedObjectHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD9DB741235FCB0700A26115 /* ObjcAssociatedObjectHelpers.h */,
+				FD9DB742235FCB0700A26115 /* NSObject+AssociatedDictionary.m */,
+				FD9DB743235FCB0700A26115 /* ObjcAssociatedObjectHelpers.m */,
+				FD9DB744235FCB0700A26115 /* NSObject+AssociatedDictionary.h */,
+			);
+			name = ObjcAssociatedObjectHelpers;
+			path = Pods/ObjcAssociatedObjectHelpers/ObjcAssociatedObjectHelpers;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -384,7 +380,7 @@
 				05666E9820A4A3D700CA3ADB /* EXTKeyPathCoding.h in Headers */,
 				05666E7E20A4A3C200CA3ADB /* NSValueTransformer+FSPredefinedTransformerAdditions.h in Headers */,
 				05666E7F20A4A3C200CA3ADB /* FSTransformerErrorHandling.h in Headers */,
-				05F32AFE22AEE70E0043B765 /* ObjcAssociatedObjectHelpers.h in Headers */,
+				FD9DB745235FCB0700A26115 /* ObjcAssociatedObjectHelpers.h in Headers */,
 				05666E9720A4A3D700CA3ADB /* EXTScope.h in Headers */,
 				05666E9320A4A3D700CA3ADB /* EXTRuntimeExtensions.h in Headers */,
 				05666E8420A4A3C200CA3ADB /* NSObject+FSComparisonAdditions.h in Headers */,
@@ -392,7 +388,7 @@
 				054FAAC2209F8B26003BC6C4 /* FSCommon.h in Headers */,
 				05666EA720A4A5D400CA3ADB /* FSURLRequestSerialization.h in Headers */,
 				05666E7C20A4A3C200CA3ADB /* FSValueTransformer.h in Headers */,
-				05F32B0122AEE70E0043B765 /* NSObject+AssociatedDictionary.h in Headers */,
+				FD9DB748235FCB0700A26115 /* NSObject+AssociatedDictionary.h in Headers */,
 				05F32AE122AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h in Headers */,
 				05666E8B20A4A3C200CA3ADB /* FSReflection.h in Headers */,
 				05666E8820A4A3C200CA3ADB /* NSArray+FSManipulationAdditions.h in Headers */,
@@ -414,7 +410,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 054FAAC5209F8B26003BC6C4 /* Build configuration list for PBXNativeTarget "FSCommon" */;
 			buildPhases = (
-				F37CEC0CF96BB988C5473F0E /* [CP] Check Pods Manifest.lock */,
+				89D99DF3D044C59E7B6CD7A3 /* [CP] Check Pods Manifest.lock */,
 				054FAAB8209F8B26003BC6C4 /* Sources */,
 				054FAAB9209F8B26003BC6C4 /* Frameworks */,
 				054FAABA209F8B26003BC6C4 /* Headers */,
@@ -433,7 +429,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 054FAAD6209F903E003BC6C4 /* Build configuration list for PBXNativeTarget "FSCommonTests" */;
 			buildPhases = (
-				49A6EE9A6AF7F78EAA98BF72 /* [CP] Check Pods Manifest.lock */,
+				C14952C03910C036E244B3AB /* [CP] Check Pods Manifest.lock */,
 				054FAAC8209F903E003BC6C4 /* Sources */,
 				054FAAC9209F903E003BC6C4 /* Frameworks */,
 				054FAACA209F903E003BC6C4 /* Resources */,
@@ -520,36 +516,44 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\necho ${BUILD_DIR}\necho ${BUILD_ROOT}\necho ${UNIVERSAL_OUTPUTFOLDER}\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/build\"\n";
 		};
-		49A6EE9A6AF7F78EAA98BF72 /* [CP] Check Pods Manifest.lock */ = {
+		89D99DF3D044C59E7B6CD7A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FSCommonTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FSCommon-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F37CEC0CF96BB988C5473F0E /* [CP] Check Pods Manifest.lock */ = {
+		C14952C03910C036E244B3AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FSCommon-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FSCommonTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,7 +580,7 @@
 				05666EB020A4A72800CA3ADB /* FSLogging.m in Sources */,
 				05666E7A20A4A3C200CA3ADB /* FSTransformerErrorHandling.m in Sources */,
 				05666E7920A4A3C200CA3ADB /* NSDictionary+FSJSONKeyPath.m in Sources */,
-				05F32AFF22AEE70E0043B765 /* NSObject+AssociatedDictionary.m in Sources */,
+				FD9DB746235FCB0700A26115 /* NSObject+AssociatedDictionary.m in Sources */,
 				05666E8220A4A3C200CA3ADB /* FSReflection.m in Sources */,
 				05666E8620A4A3C200CA3ADB /* NSDictionary+FSMappingAdditions.m in Sources */,
 				05666E7620A4A3C200CA3ADB /* NSValueTransformer+FSPredefinedTransformerAdditions.m in Sources */,
@@ -585,7 +589,7 @@
 				05666EA620A4A5D400CA3ADB /* FSNetworkReachabilityManager.m in Sources */,
 				05666EA820A4A5D400CA3ADB /* FSURLRequestSerialization.m in Sources */,
 				05666EA920A4A5D400CA3ADB /* FSURLResponseSerialization.m in Sources */,
-				05F32B0022AEE70E0043B765 /* ObjcAssociatedObjectHelpers.m in Sources */,
+				FD9DB747235FCB0700A26115 /* ObjcAssociatedObjectHelpers.m in Sources */,
 				05666E7220A4A3C200CA3ADB /* NSValueTransformer+FSInversionAdditions.m in Sources */,
 				05666E8320A4A3C200CA3ADB /* FSModel+NSCoding.m in Sources */,
 				05666EA420A4A5D400CA3ADB /* FSURLSessionManager.m in Sources */,
@@ -730,7 +734,7 @@
 		};
 		054FAAC6209F8B26003BC6C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 140108B2E6D565F4C7A9E97D /* Pods-FSCommon.debug.xcconfig */;
+			baseConfigurationReference = 0530F3BC4A68DD75E898D5EF /* Pods-FSCommon.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -741,7 +745,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = FSCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -751,10 +755,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.1.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.mobile.FSCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
@@ -768,7 +773,7 @@
 		};
 		054FAAC7209F8B26003BC6C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6951494C0DD4D06E7F85B0BA /* Pods-FSCommon.release.xcconfig */;
+			baseConfigurationReference = A293DF0A862F5566061156F9 /* Pods-FSCommon.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -779,7 +784,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = FSCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -789,7 +794,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.1.0;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.mobile.FSCommon;
@@ -805,7 +811,7 @@
 		};
 		054FAAD4209F903E003BC6C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D13494F7DF40DF1D9395600 /* Pods-FSCommonTests.debug.xcconfig */;
+			baseConfigurationReference = C3BCD17F248931728F0D0717 /* Pods-FSCommonTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FSCommonTests/Info.plist;
@@ -825,7 +831,7 @@
 		};
 		054FAAD5209F903E003BC6C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 048C0A6A13611C332E6FC688 /* Pods-FSCommonTests.release.xcconfig */;
+			baseConfigurationReference = DB1ED38DE74EFD39CB14E09C /* Pods-FSCommonTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FSCommonTests/Info.plist;
