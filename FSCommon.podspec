@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FSCommon"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "Common module for Freestar Ad SDK."
   s.description  = "A library consisting of common frameworks used in the Freestar SDK."
   s.homepage     = "https://freestar.io"

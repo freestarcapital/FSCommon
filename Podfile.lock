@@ -37,7 +37,7 @@ CHECKOUT OPTIONS:
     :commit: 193c8e459d9f5ae3853653614ef6b940afe1b776
     :git: https://github.com/freestarcapital/FSLogging.git
   FSNetworking:
-    :commit: 4d7cd8bf979d4a49f4b817acc5011c3f3c844b20
+    :commit: 8ba3aa15f403c08c47c06cc220f78c546288ec93
     :git: https://github.com/freestarcapital/FSNetworking.git
   FSSerialization:
     :commit: 26c8e168fc16179040a1b49f3eb31bfd1f9fb74a

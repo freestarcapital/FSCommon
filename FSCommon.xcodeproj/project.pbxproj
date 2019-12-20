@@ -75,6 +75,10 @@
 		058639E220AC9A6F0044CEEC /* FSWeakGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 058639E020AC9A6F0044CEEC /* FSWeakGCDTimer.m */; };
 		05F32AE122AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F32ADF22AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05F32AE222AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F32AE022AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m */; };
+		FDC3CED123AC965E0067C700 /* ObjcAssociatedObjectHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC3CECD23AC965E0067C700 /* ObjcAssociatedObjectHelpers.h */; };
+		FDC3CED223AC965E0067C700 /* NSObject+AssociatedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC3CECE23AC965E0067C700 /* NSObject+AssociatedDictionary.m */; };
+		FDC3CED323AC965E0067C700 /* ObjcAssociatedObjectHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC3CECF23AC965E0067C700 /* ObjcAssociatedObjectHelpers.m */; };
+		FDC3CED423AC965E0067C700 /* NSObject+AssociatedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC3CED023AC965E0067C700 /* NSObject+AssociatedDictionary.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,10 +151,10 @@
 		05F32AE022AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FSHTTPSessionManager+RetryPolicy.m"; path = "Pods/FSNetworking/FSNetworking/Source/FSHTTPSessionManager+RetryPolicy.m"; sourceTree = SOURCE_ROOT; };
 		05F32AE322AEE5920043B765 /* ObjcAssociatedObjectHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjcAssociatedObjectHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F32AE522AEE5A30043B765 /* ObjcAssociatedObjectHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjcAssociatedObjectHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD9DB741235FCB0700A26115 /* ObjcAssociatedObjectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcAssociatedObjectHelpers.h; sourceTree = "<group>"; };
-		FD9DB742235FCB0700A26115 /* NSObject+AssociatedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedDictionary.m"; sourceTree = "<group>"; };
-		FD9DB743235FCB0700A26115 /* ObjcAssociatedObjectHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcAssociatedObjectHelpers.m; sourceTree = "<group>"; };
-		FD9DB744235FCB0700A26115 /* NSObject+AssociatedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedDictionary.h"; sourceTree = "<group>"; };
+		FDC3CECD23AC965E0067C700 /* ObjcAssociatedObjectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcAssociatedObjectHelpers.h; sourceTree = "<group>"; };
+		FDC3CECE23AC965E0067C700 /* NSObject+AssociatedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedDictionary.m"; sourceTree = "<group>"; };
+		FDC3CECF23AC965E0067C700 /* ObjcAssociatedObjectHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcAssociatedObjectHelpers.m; sourceTree = "<group>"; };
+		FDC3CED023AC965E0067C700 /* NSObject+AssociatedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedDictionary.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +226,7 @@
 		054FAAD9209FE8BA003BC6C4 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				FD9DB740235FCB0700A26115 /* ObjcAssociatedObjectHelpers */,
+				FDC3CECC23AC965E0067C700 /* ObjcAssociatedObjectHelpers */,
 				058639DE20AC98D70044CEEC /* FSWeakGCDTimer */,
 				054FAAE8209FE991003BC6C4 /* Serialization */,
 				054FAAE7209FE98A003BC6C4 /* Networking */,
@@ -335,13 +339,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD9DB740235FCB0700A26115 /* ObjcAssociatedObjectHelpers */ = {
+		FDC3CECC23AC965E0067C700 /* ObjcAssociatedObjectHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				FD9DB741235FCB0700A26115 /* ObjcAssociatedObjectHelpers.h */,
-				FD9DB742235FCB0700A26115 /* NSObject+AssociatedDictionary.m */,
-				FD9DB743235FCB0700A26115 /* ObjcAssociatedObjectHelpers.m */,
-				FD9DB744235FCB0700A26115 /* NSObject+AssociatedDictionary.h */,
+				FDC3CECD23AC965E0067C700 /* ObjcAssociatedObjectHelpers.h */,
+				FDC3CECE23AC965E0067C700 /* NSObject+AssociatedDictionary.m */,
+				FDC3CECF23AC965E0067C700 /* ObjcAssociatedObjectHelpers.m */,
+				FDC3CED023AC965E0067C700 /* NSObject+AssociatedDictionary.h */,
 			);
 			name = ObjcAssociatedObjectHelpers;
 			path = Pods/ObjcAssociatedObjectHelpers/ObjcAssociatedObjectHelpers;
@@ -364,6 +368,7 @@
 				05666E9820A4A3D700CA3ADB /* EXTKeyPathCoding.h in Headers */,
 				05666E7E20A4A3C200CA3ADB /* NSValueTransformer+FSPredefinedTransformerAdditions.h in Headers */,
 				05666E7F20A4A3C200CA3ADB /* FSTransformerErrorHandling.h in Headers */,
+				FDC3CED123AC965E0067C700 /* ObjcAssociatedObjectHelpers.h in Headers */,
 				05666E9720A4A3D700CA3ADB /* EXTScope.h in Headers */,
 				05666E9320A4A3D700CA3ADB /* EXTRuntimeExtensions.h in Headers */,
 				05666E8420A4A3C200CA3ADB /* NSObject+FSComparisonAdditions.h in Headers */,
@@ -371,6 +376,7 @@
 				054FAAC2209F8B26003BC6C4 /* FSCommon.h in Headers */,
 				05666EA720A4A5D400CA3ADB /* FSURLRequestSerialization.h in Headers */,
 				05666E7C20A4A3C200CA3ADB /* FSValueTransformer.h in Headers */,
+				FDC3CED423AC965E0067C700 /* NSObject+AssociatedDictionary.h in Headers */,
 				05F32AE122AED4400043B765 /* FSHTTPSessionManager+RetryPolicy.h in Headers */,
 				05666E8B20A4A3C200CA3ADB /* FSReflection.h in Headers */,
 				05666E8820A4A3C200CA3ADB /* NSArray+FSManipulationAdditions.h in Headers */,
@@ -431,7 +437,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Freestar;
 				TargetAttributes = {
 					054FAABC209F8B26003BC6C4 = {
@@ -452,6 +458,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 054FAAB3209F8B26003BC6C4;
 			productRefGroup = 054FAABE209F8B26003BC6C4 /* Products */;
@@ -516,6 +523,7 @@
 				05666EB020A4A72800CA3ADB /* FSLogging.m in Sources */,
 				05666E7A20A4A3C200CA3ADB /* FSTransformerErrorHandling.m in Sources */,
 				05666E7920A4A3C200CA3ADB /* NSDictionary+FSJSONKeyPath.m in Sources */,
+				FDC3CED223AC965E0067C700 /* NSObject+AssociatedDictionary.m in Sources */,
 				05666E8220A4A3C200CA3ADB /* FSReflection.m in Sources */,
 				05666E8620A4A3C200CA3ADB /* NSDictionary+FSMappingAdditions.m in Sources */,
 				05666E7620A4A3C200CA3ADB /* NSValueTransformer+FSPredefinedTransformerAdditions.m in Sources */,
@@ -524,6 +532,7 @@
 				05666EA620A4A5D400CA3ADB /* FSNetworkReachabilityManager.m in Sources */,
 				05666EA820A4A5D400CA3ADB /* FSURLRequestSerialization.m in Sources */,
 				05666EA920A4A5D400CA3ADB /* FSURLResponseSerialization.m in Sources */,
+				FDC3CED323AC965E0067C700 /* ObjcAssociatedObjectHelpers.m in Sources */,
 				05666E7220A4A3C200CA3ADB /* NSValueTransformer+FSInversionAdditions.m in Sources */,
 				05666E8320A4A3C200CA3ADB /* FSModel+NSCoding.m in Sources */,
 				05666EA420A4A5D400CA3ADB /* FSURLSessionManager.m in Sources */,
@@ -689,7 +698,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -727,7 +736,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.freestar.mobile.FSCommon;
