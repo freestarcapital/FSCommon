@@ -1,6 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
+install! 'cocoapods', integrate_targets: false
 
 target "FSCommon" do
   pod 'FSNetworking', :git => 'https://github.com/freestarcapital/FSNetworking.git'

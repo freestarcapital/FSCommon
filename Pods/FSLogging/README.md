@@ -1,2 +1,0 @@
-# FSLogging
-Freestar logging framework
